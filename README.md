@@ -7,8 +7,8 @@ The environment used was Ubuntu-18 on AWS
 
 Run following commands on unix prompt from the working directory where all code which needs to be dockerize is present.
 
-1. sudo usermod -aG docker ubuntu (Gives admin previliges to the user after verifying identity)
-2. pip install docker (Installs Docker).
+1. pip install docker (Installs Docker).
+2. sudo usermod -aG docker ubuntu (Gives admin previliges to the user after verifying identity)
 3. Create a "Dockerfile" --> (Exact name as mentioned) in the working directory and put the following code into it.
 
        1. FROM alpine:latest
