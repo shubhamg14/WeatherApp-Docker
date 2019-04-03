@@ -57,10 +57,14 @@ Following command to be used to push image to Docker.io
 
 1. Create an account on Docker.io using your email id.
 2. docker login --username=yourhubusername --email=youremail@company.com 
-3. docker tag <image_id> <yourhubusername>/<repository_name>:<tag>
+3. docker tag (image_id) (yourhubusername)/(repository_name):(tag)
    Example : docker tag 123456efg12 abc123/weatherapp:ver1
-4. docker push <yourhubusername>/<repository created on docker hub>
+4. docker push (yourhubusername)/(repository created on docker hub)
     Example: docker push abc123/weatherapp
 
 ## Pulling and running the DockerImage from Docker.io
 
+To pull image from docker.io use following commands:
+
+1. docker pull (yourhubusername)/weatherapp:var1
+2. docker run -d -p 80:80 (youhubusername)/weatherapp:var1
