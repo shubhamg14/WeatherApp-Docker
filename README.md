@@ -40,6 +40,10 @@ Save and exit the Dockerfile
 
 ## Creating and Running Docker Image and Container
 
+Before building Docker image add following code in to your flask python code:
+
+       app.run(host='0.0.0.0',port=80)
+
 After Dockerfile is created, run the following commands:
 
 1. docker build -t flaskapp:latest . (Builds a latest(tag) image for flaskapp)
